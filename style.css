@@ -1,0 +1,596 @@
+/* ===============================
+   GOOGLE FONT
+================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===============================
+   RESET
+================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* ===============================
+   BODY
+================================= */
+
+body{
+    background:#f4f7fb;
+    color:#333;
+    line-height:1.7;
+}
+
+/* ===============================
+   HEADER
+================================= */
+
+header{
+    background:linear-gradient(135deg,#004aad,#007bff);
+    color:white;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo h1{
+    font-size:32px;
+}
+
+.logo p{
+    font-size:14px;
+}
+
+/* ===============================
+   NAVIGATION
+================================= */
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:yellow;
+}
+
+/* ===============================
+   HERO SECTION
+================================= */
+
+.hero{
+    text-align:center;
+    padding:70px 20px;
+    background:linear-gradient(to right,#dbeafe,#eef5ff);
+}
+
+.hero h2{
+    font-size:45px;
+    color:#004aad;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+.hero img{
+    width:90%;
+    max-width:900px;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+}
+
+.hero button{
+    margin-top:30px;
+    padding:15px 40px;
+    background:#004aad;
+    color:white;
+    border:none;
+    border-radius:30px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.4s;
+}
+
+.hero button:hover{
+    background:#ff9800;
+    transform:scale(1.05);
+}
+
+/* ===============================
+   COMMON SECTION
+================================= */
+
+section{
+    padding:60px 8%;
+}
+
+section h2{
+    text-align:center;
+    color:#004aad;
+    margin-bottom:30px;
+    font-size:35px;
+}
+
+section p{
+    margin-bottom:15px;
+}
+
+/* ===============================
+   ABOUT IMAGE
+================================= */
+
+figure{
+    text-align:center;
+    margin-top:30px;
+}
+
+figure img{
+    width:80%;
+    max-width:600px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+figcaption{
+    margin-top:10px;
+    font-weight:bold;
+}
+
+/* ===============================
+   LISTS
+================================= */
+
+ul,
+ol{
+    margin-left:40px;
+    margin-top:20px;
+}
+
+ul li,
+ol li{
+    margin-bottom:12px;
+}
+
+/* ===============================
+   TABLE
+================================= */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+    background:white;
+}
+
+table,
+th,
+td{
+    border:1px solid #ccc;
+}
+
+th{
+    background:#004aad;
+    color:white;
+    padding:15px;
+}
+
+td{
+    padding:15px;
+    text-align:center;
+}
+
+tr:nth-child(even){
+    background:#f2f2f2;
+}
+
+tr:hover{
+    background:#dcecff;
+}
+
+/* ===============================
+   PROGRESS
+================================= */
+
+progress,
+meter{
+    width:100%;
+    height:30px;
+    margin-bottom:25px;
+}
+
+/* ===============================
+   ARTICLE
+================================= */
+
+article{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    margin:20px 0;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+article h3{
+    color:#004aad;
+    margin-bottom:10px;
+}
+
+/* ===============================
+   REVIEW
+================================= */
+
+blockquote{
+    background:#eef5ff;
+    border-left:6px solid #004aad;
+    padding:20px;
+    margin-top:20px;
+    font-style:italic;
+}
+
+cite{
+    display:block;
+    margin-top:10px;
+    font-weight:bold;
+    color:#004aad;
+}
+
+/* ===============================
+   GALLERY
+================================= */
+
+.gallery{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.gallery img{
+    width:300px;
+    height:220px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:.4s;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.gallery img:hover{
+    transform:scale(1.08);
+}
+/* ==========================================
+   VIDEO SECTION
+========================================== */
+
+video{
+    width:100%;
+    max-width:800px;
+    display:block;
+    margin:30px auto;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* ==========================================
+   AUDIO SECTION
+========================================== */
+
+audio{
+    width:100%;
+    max-width:600px;
+    display:block;
+    margin:20px auto;
+}
+
+/* ==========================================
+   IFRAME (MAP)
+========================================== */
+
+iframe{
+    width:100%;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* ==========================================
+   FORM
+========================================== */
+
+form{
+    max-width:700px;
+    margin:auto;
+}
+
+fieldset{
+    border:2px solid #004aad;
+    border-radius:12px;
+    padding:30px;
+    background:white;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+legend{
+    padding:10px 20px;
+    background:#004aad;
+    color:white;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+label{
+    font-weight:600;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:12px;
+    margin-top:8px;
+    margin-bottom:18px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    outline:none;
+    border:2px solid #007bff;
+}
+
+/* Radio & Checkbox */
+
+input[type="radio"],
+input[type="checkbox"]{
+    width:auto;
+    margin-right:8px;
+}
+
+/* Buttons */
+
+input[type="submit"],
+input[type="reset"]{
+    width:48%;
+    padding:14px;
+    border:none;
+    color:white;
+    font-size:17px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+input[type="submit"]{
+    background:#004aad;
+}
+
+input[type="reset"]{
+    background:#ff9800;
+}
+
+input[type="submit"]:hover{
+    background:#00357d;
+}
+
+input[type="reset"]:hover{
+    background:#e68900;
+}
+
+/* ==========================================
+   PRE TAG
+========================================== */
+
+pre{
+    background:#222;
+    color:white;
+    padding:20px;
+    border-radius:10px;
+    overflow:auto;
+}
+
+/* ==========================================
+   CODE TAG
+========================================== */
+
+code{
+    background:#eeeeee;
+    color:#d63384;
+    padding:4px 8px;
+    border-radius:5px;
+}
+
+/* ==========================================
+   DETAILS
+========================================== */
+
+details{
+    background:white;
+    padding:18px;
+    margin-bottom:15px;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+summary{
+    cursor:pointer;
+    font-weight:bold;
+    color:#004aad;
+    font-size:18px;
+}
+
+/* ==========================================
+   ADDRESS
+========================================== */
+
+address{
+    background:#eef5ff;
+    padding:25px;
+    border-left:6px solid #004aad;
+    border-radius:10px;
+    font-style:normal;
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer{
+    background:#004aad;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+footer p{
+    margin:8px 0;
+}
+
+/* ==========================================
+   HOVER EFFECTS
+========================================== */
+
+table,
+article,
+fieldset,
+details,
+address,
+.gallery img{
+    transition:0.3s;
+}
+
+article:hover,
+fieldset:hover,
+details:hover{
+    transform:translateY(-5px);
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+/* ==========================================
+   HR
+========================================== */
+
+hr{
+    border:none;
+    height:2px;
+    background:#dcdcdc;
+    margin:0;
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#004aad;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#eeeeee;
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    text-align:center;
+}
+
+nav ul{
+    flex-direction:column;
+    margin-top:20px;
+}
+
+nav ul li{
+    margin:10px 0;
+}
+
+.hero h2{
+    font-size:30px;
+}
+
+section h2{
+    font-size:28px;
+}
+
+.gallery{
+    flex-direction:column;
+    align-items:center;
+}
+
+.gallery img{
+    width:90%;
+}
+
+table{
+    font-size:14px;
+}
+
+input[type="submit"],
+input[type="reset"]{
+    width:100%;
+    margin-bottom:15px;
+}
+
+iframe{
+    height:300px;
+}
+
+video{
+    width:100%;
+}
+
+}
+
+@media(max-width:480px){
+
+.logo h1{
+    font-size:24px;
+}
+
+.hero h2{
+    font-size:24px;
+}
+
+.hero p{
+    font-size:15px;
+}
+
+section{
+    padding:40px 20px;
+}
+
+}
